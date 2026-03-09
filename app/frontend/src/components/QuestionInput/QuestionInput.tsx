@@ -114,12 +114,7 @@ export const QuestionInput = ({ onSend, onStop, disabled, placeholder, clearOnSe
                     </Tooltip>
                 ) : (
                     <Tooltip content={t("tooltips.submitQuestion")} relationship="label">
-                        <Button
-                            size="large"
-                            icon={<Send28Filled primaryFill="#B2172F" />}
-                            disabled={sendQuestionDisabled}
-                            onClick={sendQuestion}
-                        />
+                        <Button size="large" icon={<Send28Filled primaryFill="#B2172F" />} disabled={sendQuestionDisabled} onClick={sendQuestion} />
                     </Tooltip>
                 )}
             </div>

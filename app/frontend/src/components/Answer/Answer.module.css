@@ -1,7 +1,6 @@
 .answerContainer {
     padding: 1.25em;
-    background:
-        linear-gradient(180deg, rgba(255, 251, 245, 0.98), rgba(255, 243, 228, 0.96));
+    background: linear-gradient(180deg, rgba(255, 251, 245, 0.98), rgba(255, 243, 228, 0.96));
     border-radius: 1.25em;
     box-shadow: var(--coke-shadow);
     border: 1px solid var(--coke-line);

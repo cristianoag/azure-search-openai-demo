@@ -14,8 +14,7 @@
 
 .example {
     word-break: break-word;
-    background:
-        radial-gradient(circle at top right, rgba(255, 255, 255, 0.55), transparent 35%),
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.55), transparent 35%),
         linear-gradient(160deg, rgba(255, 252, 247, 0.96), rgba(255, 238, 214, 0.92));
     border: 1px solid rgba(178, 23, 47, 0.12);
     border-radius: 1.25rem;

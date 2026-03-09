@@ -18,10 +18,8 @@
 
 html {
     height: 100%;
-    background:
-        radial-gradient(circle at 15% 20%, rgba(255, 233, 198, 0.9), transparent 24%),
-        radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.55), transparent 18%),
-        linear-gradient(180deg, #f8e7d0 0%, #fff8f0 48%, #f3d7b8 100%);
+    background: radial-gradient(circle at 15% 20%, rgba(255, 233, 198, 0.9), transparent 24%),
+        radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.55), transparent 18%), linear-gradient(180deg, #f8e7d0 0%, #fff8f0 48%, #f3d7b8 100%);
     font-size: 12px; /* Root font size for 320px width screens */
     font-family: "Trebuchet MS", "Avenir Next", "Segoe UI", sans-serif;
     -webkit-font-smoothing: antialiased;

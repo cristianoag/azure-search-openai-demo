@@ -14,8 +14,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    background:
-        linear-gradient(135deg, rgba(122, 16, 34, 0.94), rgba(181, 23, 47, 0.92)),
+    background: linear-gradient(135deg, rgba(122, 16, 34, 0.94), rgba(181, 23, 47, 0.92)),
         radial-gradient(circle at top right, rgba(255, 239, 214, 0.22), transparent 45%);
     color: #fff8ef;
     box-shadow: 0 14px 32px rgba(89, 10, 24, 0.22);

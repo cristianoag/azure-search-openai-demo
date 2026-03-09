@@ -42,8 +42,7 @@
     align-items: center;
     padding: 1.5rem;
     border-radius: 2rem;
-    background:
-        radial-gradient(circle at top right, rgba(255, 255, 255, 0.65), transparent 30%),
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.65), transparent 30%),
         linear-gradient(135deg, rgba(255, 248, 240, 0.92), rgba(255, 233, 204, 0.94));
     border: 1px solid rgba(178, 23, 47, 0.1);
     box-shadow: 0 24px 50px rgba(122, 16, 34, 0.12);
@@ -55,8 +54,7 @@
     align-items: center;
     padding: 1rem;
     min-height: 12rem;
-    background:
-        radial-gradient(circle at center, rgba(178, 23, 47, 0.12), transparent 60%),
+    background: radial-gradient(circle at center, rgba(178, 23, 47, 0.12), transparent 60%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 245, 231, 0));
     border-radius: 1.5rem;
 }
