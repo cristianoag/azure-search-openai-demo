@@ -1,12 +1,39 @@
 .answerContainer {
     padding: 1.25em;
-    background: rgb(249, 249, 249);
-    border-radius: 0.75em;
-    box-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.06),
-        0 0 1px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e8e8e8;
+    background:
+        linear-gradient(180deg, rgba(255, 251, 245, 0.98), rgba(255, 243, 228, 0.96));
+    border-radius: 1.25em;
+    box-shadow: var(--coke-shadow);
+    border: 1px solid var(--coke-line);
     outline: transparent solid 0.0625em;
+    position: relative;
+    overflow: hidden;
+}
+
+.answerContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 0.4rem;
+    background: linear-gradient(90deg, var(--coke-red-dark), var(--coke-red-bright), var(--coke-red));
+}
+
+.answerHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.answerToolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+}
+
+.toolbarButton {
+    color: var(--coke-soda);
 }
 
 .answerLogo {
@@ -16,9 +43,10 @@
 .answerText {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375em;
+    line-height: 1.55em;
     padding-top: 1em;
     padding-bottom: 1em;
+    color: var(--coke-ink);
 }
 
 .answerText h1,
@@ -39,7 +67,7 @@ h2 {
 }
 
 .selected {
-    outline: 0.125em solid rgba(115, 118, 225, 1);
+    outline: 0.125em solid var(--coke-red-bright);
 }
 
 .citationLearnMore {
@@ -52,10 +80,10 @@ h2 {
     font-weight: 500;
     line-height: 1.5em;
     text-align: center;
-    border-radius: 0.25em;
-    padding: 0em 0.5em;
-    background: #d1dbfa;
-    color: #123bb6;
+    border-radius: 999px;
+    padding: 0.1em 0.7em;
+    background: #ffe1bc;
+    color: var(--coke-red-dark);
     text-decoration: none;
     cursor: pointer;
 }
@@ -78,13 +106,14 @@ h2 {
     font-weight: 600;
     line-height: 1.5em;
     text-align: center;
-    border-radius: 0.25em;
-    padding: 0em 0.5em;
-    background: #e8ebfa;
-    color: black;
-    font-style: italic;
+    border-radius: 999px;
+    padding: 0.15em 0.7em;
+    background: #fff1df;
+    color: var(--coke-soda);
+    font-style: normal;
     text-decoration: none;
     cursor: pointer;
+    border: 1px solid rgba(178, 23, 47, 0.16);
 }
 
 .supContainer {
@@ -121,8 +150,8 @@ sup {
     min-width: 0.875em;
     height: 0.875em;
     border-radius: 0.1875em;
-    background: #d1dbfa;
-    color: #123bb6;
+    background: #ffe1bc;
+    color: var(--coke-red-dark);
     text-decoration-color: transparent;
     outline: transparent solid 0.0625em;
     cursor: pointer;
@@ -133,10 +162,10 @@ sup {
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: #f4f6ff;
-    color: #123bb6;
+    background: #fff1df;
+    color: var(--coke-red-dark);
     font-weight: 600;
-    border: 0.0625em solid #d1dbfa;
+    border: 0.0625em solid #ffd4a4;
 }
 
 .citationStepBadgeInline {

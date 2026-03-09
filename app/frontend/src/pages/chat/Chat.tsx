@@ -13,7 +13,7 @@ import {
 import { Dismiss24Regular } from "@fluentui/react-icons";
 import readNDJSONStream from "ndjson-readablestream";
 
-import appLogo from "../../assets/applogo.svg";
+import appLogo from "../../assets/Coca-Cola-Logo.png";
 import styles from "./Chat.module.css";
 
 import { chatApi, configApi, RetrievalMode, ChatAppResponse, ChatAppResponseOrError, ChatAppRequest, ResponseMessage, SpeechConfig } from "../../api";
@@ -551,10 +551,21 @@ const Chat = () => {
                 <div className={styles.chatContainer}>
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
-                            <img src={appLogo} alt="App logo" width="120" height="120" />
-
-                            <h1 className={styles.chatEmptyStateTitle}>{t("chatEmptyStateTitle")}</h1>
-                            <h2 className={styles.chatEmptyStateSubtitle}>{t("chatEmptyStateSubtitle")}</h2>
+                            <div className={styles.chatHeroPanel}>
+                                <div className={styles.chatHeroVisual}>
+                                    <img src={appLogo} alt="Coca-Cola logo" className={styles.chatHeroLogo} />
+                                </div>
+                                <div className={styles.chatHeroCopy}>
+                                    <span className={styles.chatHeroEyebrow}>Coke concierge</span>
+                                    <h1 className={styles.chatEmptyStateTitle}>{t("chatEmptyStateTitle")}</h1>
+                                    <h2 className={styles.chatEmptyStateSubtitle}>{t("chatEmptyStateSubtitle")}</h2>
+                                    <div className={styles.chatHeroChips}>
+                                        <span className={styles.chatHeroChip}>Sparkling answers</span>
+                                        <span className={styles.chatHeroChip}>Brand-red workflow</span>
+                                        <span className={styles.chatHeroChip}>Search with fizz</span>
+                                    </div>
+                                </div>
+                            </div>
                             {showLanguagePicker && <LanguagePicker onLanguageChange={newLang => i18n.changeLanguage(newLang)} />}
 
                             <ExampleList onExampleClicked={onExampleClicked} useMultimodalAnswering={showMultimodalOptions} />

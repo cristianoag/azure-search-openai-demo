@@ -10,8 +10,8 @@ import { requireLogin } from "../../authConfig";
 
 const StopCircleIcon = () => (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="14" cy="14" r="12.5" stroke="black" strokeWidth="2" fill="none" />
-        <rect x="9" y="9" width="10" height="10" rx="1" fill="black" />
+        <circle cx="14" cy="14" r="12.5" stroke="#8D1223" strokeWidth="2" fill="none" />
+        <rect x="9" y="9" width="10" height="10" rx="1" fill="#8D1223" />
     </svg>
 );
 
@@ -116,7 +116,7 @@ export const QuestionInput = ({ onSend, onStop, disabled, placeholder, clearOnSe
                     <Tooltip content={t("tooltips.submitQuestion")} relationship="label">
                         <Button
                             size="large"
-                            icon={<Send28Filled primaryFill="rgba(115, 118, 225, 1)" />}
+                            icon={<Send28Filled primaryFill="#B2172F" />}
                             disabled={sendQuestionDisabled}
                             onClick={sendQuestion}
                         />

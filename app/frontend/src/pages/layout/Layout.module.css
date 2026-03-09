@@ -11,34 +11,63 @@
 }
 
 .header {
-    background-color: #222222;
-    color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background:
+        linear-gradient(135deg, rgba(122, 16, 34, 0.94), rgba(181, 23, 47, 0.92)),
+        radial-gradient(circle at top right, rgba(255, 239, 214, 0.22), transparent 45%);
+    color: #fff8ef;
+    box-shadow: 0 14px 32px rgba(89, 10, 24, 0.22);
+    border-bottom: 1px solid rgba(255, 245, 231, 0.18);
+    backdrop-filter: blur(14px);
 }
 
 .headerContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    gap: 1rem;
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 0.9rem 1rem;
     position: relative;
 }
 
 .headerTitleContainer {
     display: flex;
     align-items: center;
-    color: #f2f2f2;
+    gap: 0.85rem;
+    color: #fff8ef;
     text-decoration: none;
 }
 
 .headerLogo {
-    height: 2rem;
-    width: auto;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(42, 11, 15, 0.24);
+    background: rgba(255, 248, 239, 0.08);
+    padding: 0.2rem;
+}
+
+.headerTextGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerEyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 245, 231, 0.7);
 }
 
 .headerTitle {
-    margin-left: 0.5rem;
-    font-weight: 600;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.02em;
 }
 
 .headerNavList {
@@ -101,12 +130,12 @@
 .loginMenuContainer {
     display: flex;
     align-items: center;
-    gap: 0; /* Ensure no gap between login button and menu toggle */
+    gap: 0;
 }
 
 @media (min-width: 992px) {
     .headerTitle {
-        font-weight: 600;
+        font-size: 1.3rem;
     }
 
     .headerNavList {

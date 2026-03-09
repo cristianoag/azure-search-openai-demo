@@ -71,12 +71,12 @@ export const Answer = ({
             style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}
         >
             <div>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div className={styles.answerHeader}>
                     <AnswerIcon />
-                    <div>
+                    <div className={styles.answerToolbar}>
                         <Button
                             appearance="transparent"
-                            style={{ color: "black" }}
+                            className={styles.toolbarButton}
                             icon={copied ? <Checkmark24Regular /> : <Copy24Regular />}
                             title={copied ? t("tooltips.copied") : t("tooltips.copy")}
                             aria-label={copied ? t("tooltips.copied") : t("tooltips.copy")}
@@ -84,7 +84,7 @@ export const Answer = ({
                         />
                         <Button
                             appearance="transparent"
-                            style={{ color: "black" }}
+                            className={styles.toolbarButton}
                             icon={<LightbulbFilament24Regular />}
                             title={t("tooltips.showThoughtProcess")}
                             aria-label={t("tooltips.showThoughtProcess")}
@@ -93,7 +93,7 @@ export const Answer = ({
                         />
                         <Button
                             appearance="transparent"
-                            style={{ color: "black" }}
+                            className={styles.toolbarButton}
                             icon={<ClipboardTextLtr24Regular />}
                             title={t("tooltips.showSupportingContent")}
                             aria-label={t("tooltips.showSupportingContent")}

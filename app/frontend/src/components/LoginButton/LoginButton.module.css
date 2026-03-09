@@ -1,6 +1,10 @@
 .loginButton {
-    border-radius: 0.3125em;
-    font-weight: 100;
+    border-radius: 999px;
+    font-weight: 600;
     margin: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1rem;
+    border: 1px solid rgba(255, 248, 240, 0.22);
+    background: rgba(255, 248, 240, 0.1);
+    color: #fff8ef;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
